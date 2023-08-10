@@ -10,30 +10,6 @@ const CricketScore = () => {
   const [over, setOver] = useState(0);
   const [count, setCount] = useState(0);
 
-//   const setScores = (num) => {
-//     if (over < 10 && wicket <= 9) {
-//       setScore(score + num);
-//       setCount(count + 1);
-
-//       if (count === 6 ) {
-//         setOver(over + 1);
-//         setCount(0);
-//       }
-//     }
-//     if (over === 10) {
-//       toast.success("The Over Has Ended");
-//     }
-//   };
-
-//   const setWickets = (wic) => {
-    // if (wicket <= 9) {
-    //   if (wicket === 9) {
-    //     toast.success("All Out ! Game over");
-    //   }
-//       setWicket(wicket + 1);
-//       setCount(count + 1);
-//     }
-//   };
 useEffect(()=>{
 if(over === 10){
     toast.warning('Over has Ended ! Game Over')
